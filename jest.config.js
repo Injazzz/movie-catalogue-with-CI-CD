@@ -1,3 +1,6 @@
+/* eslint-disable max-len */
+// jest.config.js
+
 /**
  * For a detailed explanation regarding each configuration property, visit:
  * https://jestjs.io/docs/configuration
@@ -10,7 +13,7 @@ const config = {
   ],
 
   // The paths to modules that run some code to configure or set up the testing environment before each test
-  setupFiles: ['fake-indexeddb/auto'],
+  setupFiles: ['fake-indexeddb/auto', 'dotenv/config'],
 
   // The test environment that will be used for testing
   testEnvironment: 'jsdom',
